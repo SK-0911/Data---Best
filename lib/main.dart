@@ -3,9 +3,9 @@ import 'package:flutter/gestures.dart';
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
-import 'package:myapp/page-1/page-1.dart';
-import 'package:myapp/page-1/page-2.dart';
-import 'package:myapp/page-1/page-3.dart';
+import 'package:myapp/pages/page-1.dart';
+import 'package:myapp/pages/page-2.dart';
+import 'package:myapp/pages/page-3.dart';
 
 void main() => runApp(MyApp());
 
