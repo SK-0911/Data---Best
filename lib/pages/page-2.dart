@@ -51,7 +51,7 @@ class PageTwo extends StatelessWidget {
                         'Inter',
                         fontSize: 16 * ffem,
                         fontWeight: FontWeight.w600,
-                        height: 1.2125 * ffem / fem,
+                        height: 1.2 * ffem / fem,
                         color: const Color(0xff000000),
                       ),
                     ),
@@ -154,7 +154,7 @@ class PageTwo extends StatelessWidget {
                                     'Inter',
                                     fontSize: 13 * ffem,
                                     fontWeight: FontWeight.w400,
-                                    height: 1.2125 * ffem / fem,
+                                    height: 1.2 * ffem / fem,
                                     color: const Color(0xffffffff),
                                   ),
                                 ),
@@ -436,16 +436,14 @@ class PageTwo extends StatelessWidget {
                         ),
                         Container(
                           // Name, Designation and stat Group
-                          padding: EdgeInsets.fromLTRB(
-                              17 * fem, 0 * fem, 0 * fem, 0 * fem),
+                          padding: EdgeInsets.fromLTRB(17 * fem, 0 * fem, 0 * fem, 0 * fem),
                           height: double.infinity,
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Container(
                                 // Name and Designation Group
-                                margin: EdgeInsets.fromLTRB(
-                                    0 * fem, 0 * fem, 104 * fem, 0 * fem),
+                                margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 104 * fem, 0 * fem),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -459,8 +457,8 @@ class PageTwo extends StatelessWidget {
                                           'Inter',
                                           fontSize: 14 * ffem,
                                           fontWeight: FontWeight.w700,
-                                          height: 1.2125 * ffem / fem,
-                                          color: Color(0xff191919),
+                                          height: 1.2 * ffem / fem,
+                                          color: const Color(0xff191919),
                                         ),
                                       ),
                                     ),
@@ -471,8 +469,8 @@ class PageTwo extends StatelessWidget {
                                         'Inter',
                                         fontSize: 12 * ffem,
                                         fontWeight: FontWeight.w300,
-                                        height: 1.2125 * ffem / fem,
-                                        color: Color(0xff5f5a5a),
+                                        height: 1.2 * ffem / fem,
+                                        color: const Color(0xff5f5a5a),
                                       ),
                                     ),
                                   ],
@@ -488,8 +486,8 @@ class PageTwo extends StatelessWidget {
                                     'Inter',
                                     fontSize: 14 * ffem,
                                     fontWeight: FontWeight.w700,
-                                    height: 1.2125 * ffem / fem,
-                                    color: Color(0xff000000),
+                                    height: 1.2 * ffem / fem,
+                                    color: const Color(0xff000000),
                                   ),
                                 ),
                               ),
@@ -537,8 +535,7 @@ class PageTwo extends StatelessWidget {
                                   children: [
                                     Container(
                                       // Name
-                                      margin: EdgeInsets.fromLTRB(
-                                          0 * fem, 0 * fem, 0 * fem, 9 * fem),
+                                      margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 0 * fem, 9 * fem),
                                       child: Text(
                                         'Marta Padberg',
                                         style: SafeGoogleFont(
@@ -566,8 +563,7 @@ class PageTwo extends StatelessWidget {
                               ),
                               Container(
                                 // Stat
-                                margin: EdgeInsets.fromLTRB(
-                                    0 * fem, 0 * fem, 0 * fem, 6 * fem),
+                                margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 0 * fem, 6 * fem),
                                 child: Text(
                                   '72.9%',
                                   style: SafeGoogleFont(

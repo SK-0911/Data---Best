@@ -12,14 +12,14 @@ class PageOne extends StatelessWidget {
     double baseWidth = 358;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
-    return Container(
+    return SizedBox(
       width: double.infinity,
       child: Container(
         // Page 1
         padding: EdgeInsets.fromLTRB(17 * fem, 41 * fem, 17 * fem, 167 * fem),
         width: double.infinity,
         decoration: BoxDecoration(
-          color: Color(0xffefebe7),
+          color: const Color(0xffefebe7),
           borderRadius: BorderRadius.circular(30 * fem),
         ),
         child: Column(
@@ -35,13 +35,12 @@ class PageOne extends StatelessWidget {
                 children: [
                   Container(
                     // Logo
-                    margin: EdgeInsets.fromLTRB(
-                        0 * fem, 0 * fem, 10 * fem, 0 * fem),
+                    margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 10 * fem, 0 * fem),
                     width: 35 * fem,
                     height: 35 * fem,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(17.5 * fem),
-                      color: Color(0xffffffff),
+                      color: const Color(0xffffffff),
                     ),
                   ),
                   Container(
@@ -54,8 +53,8 @@ class PageOne extends StatelessWidget {
                         'Inter',
                         fontSize: 16 * ffem,
                         fontWeight: FontWeight.w600,
-                        height: 1.2125 * ffem / fem,
-                        color: Color(0xff000000),
+                        height: 1.2 * ffem / fem,
+                        color: const Color(0xff000000),
                       ),
                     ),
                   ),
@@ -74,8 +73,8 @@ class PageOne extends StatelessWidget {
                   'Inter',
                   fontSize: 32 * ffem,
                   fontWeight: FontWeight.w600,
-                  height: 1.2125 * ffem / fem,
-                  color: Color(0xff000000),
+                  height: 1.2 * ffem / fem,
+                  color: const Color(0xff000000),
                 ),
               ),
             ),
@@ -88,8 +87,8 @@ class PageOne extends StatelessWidget {
                     'Inter',
                     fontSize: 16 * ffem,
                     fontWeight: FontWeight.w400,
-                    height: 1.2125 * ffem / fem,
-                    color: Color(0xff000000),
+                    height: 1.2 * ffem / fem,
+                    color: const Color(0xff000000),
                   ),
                   children: [
                     const TextSpan(
@@ -101,8 +100,8 @@ class PageOne extends StatelessWidget {
                         'Inter',
                         fontSize: 16 * ffem,
                         fontWeight: FontWeight.w700,
-                        height: 1.2125 * ffem / fem,
-                        color: Color(0xff000000),
+                        height: 1.2 * ffem / fem,
+                        color: const Color(0xff000000),
                       ),
                     ),
                     const TextSpan(
@@ -114,8 +113,8 @@ class PageOne extends StatelessWidget {
                         'Inter',
                         fontSize: 16 * ffem,
                         fontWeight: FontWeight.w700,
-                        height: 1.2125 * ffem / fem,
-                        color: Color(0xff000000),
+                        height: 1.2 * ffem / fem,
+                        color: const Color(0xff000000),
                       ),
                     ),
                     const TextSpan(
@@ -135,10 +134,8 @@ class PageOne extends StatelessWidget {
                 children: [
                   Container(
                     // box1S4x (9:8)
-                    margin: EdgeInsets.fromLTRB(
-                        0 * fem, 0 * fem, 20 * fem, 0 * fem),
-                    padding: EdgeInsets.fromLTRB(
-                        18 * fem, 19 * fem, 25 * fem, 28 * fem),
+                    margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 20 * fem, 0 * fem),
+                    padding: EdgeInsets.fromLTRB(18 * fem, 19 * fem, 25 * fem, 28 * fem),
                     width: 152 * fem,
                     height: double.infinity,
                     decoration: BoxDecoration(
@@ -150,8 +147,7 @@ class PageOne extends StatelessWidget {
                       children: [
                         Container(
                           // Best New Solutions
-                          margin: EdgeInsets.fromLTRB(
-                              0 * fem, 0 * fem, 3 * fem, 12 * fem),
+                          margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 3 * fem, 12 * fem),
                           constraints: BoxConstraints(
                             maxWidth: 106 * fem,
                           ),
@@ -161,15 +157,14 @@ class PageOne extends StatelessWidget {
                               'Inter',
                               fontSize: 15 * ffem,
                               fontWeight: FontWeight.w700,
-                              height: 1.2125 * ffem / fem,
-                              color: Color(0xff000000),
+                              height: 1.2 * ffem / fem,
+                              color: const Color(0xff000000),
                             ),
                           ),
                         ),
                         Container(
                           //  yellow - orangered img
-                          margin: EdgeInsets.fromLTRB(
-                              7 * fem, 0 * fem, 0 * fem, 0 * fem),
+                          margin: EdgeInsets.fromLTRB(7 * fem, 0 * fem, 0 * fem, 0 * fem),
                           width: 102 * fem,
                           height: 100 * fem,
                           child: Image.asset(
@@ -183,12 +178,11 @@ class PageOne extends StatelessWidget {
                   ),
                   Container(
                     // 500+
-                    padding: EdgeInsets.fromLTRB(
-                        17 * fem, 7 * fem, 24 * fem, 33 * fem),
+                    padding: EdgeInsets.fromLTRB(17 * fem, 7 * fem, 24 * fem, 33 * fem),
                     width: 152 * fem,
                     height: double.infinity,
                     decoration: BoxDecoration(
-                      color: Color(0xffffffff),
+                      color: const Color(0xffffffff),
                       borderRadius: BorderRadius.circular(16 * fem),
                     ),
                     child: Column(
@@ -204,31 +198,29 @@ class PageOne extends StatelessWidget {
                             children: [
                               Container(
                                 // yPe (9:19)
-                                margin: EdgeInsets.fromLTRB(
-                                    0 * fem, 21 * fem, 0 * fem, 0 * fem),
+                                margin: EdgeInsets.fromLTRB(0 * fem, 21 * fem, 0 * fem, 0 * fem),
                                 child: Text(
                                   '500',
                                   style: SafeGoogleFont(
                                     'Inter',
                                     fontSize: 32 * ffem,
                                     fontWeight: FontWeight.w600,
-                                    height: 1.2125 * ffem / fem,
-                                    color: Color(0xff000000),
+                                    height: 1.2 * ffem / fem,
+                                    color: const Color(0xff000000),
                                   ),
                                 ),
                               ),
                               Container(
                                 // Plus in super script
-                                margin: EdgeInsets.fromLTRB(
-                                    0 * fem, 0 * fem, 0 * fem, 21 * fem),
+                                margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 0 * fem, 21 * fem),
                                 child: Text(
                                   '+',
                                   style: SafeGoogleFont(
                                     'Inter',
                                     fontSize: 32 * ffem,
                                     fontWeight: FontWeight.w600,
-                                    height: 1.2125 * ffem / fem,
-                                    color: Color(0xff000000),
+                                    height: 1.2 * ffem / fem,
+                                    color: const Color(0xff000000),
                                   ),
                                 ),
                               ),
@@ -248,7 +240,7 @@ class PageOne extends StatelessWidget {
                               'Inter',
                               fontSize: 13 * ffem,
                               fontWeight: FontWeight.w400,
-                              height: 1.2125 * ffem / fem,
+                              height: 1.2 * ffem / fem,
                               color: const Color(0xff403e3e),
                             ),
                           ),
@@ -286,7 +278,7 @@ class PageOne extends StatelessWidget {
                       width: 172 * fem,
                       height: 47 * fem,
                       decoration: BoxDecoration(
-                        color: Color(0xff000000),
+                        color: const Color(0xff000000),
                         borderRadius: BorderRadius.circular(12 * fem),
                       ),
                       child: Center(
@@ -296,8 +288,8 @@ class PageOne extends StatelessWidget {
                             'Inter',
                             fontSize: 15 * ffem,
                             fontWeight: FontWeight.w700,
-                            height: 1.2125 * ffem / fem,
-                            color: Color(0xffffffff),
+                            height: 1.2 * ffem / fem,
+                            color: const Color(0xffffffff),
                           ),
                         ),
                       ),
