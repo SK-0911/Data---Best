@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:myapp/pages/page-2.dart';
 import 'package:myapp/utils.dart';
 
 class PageOne extends StatelessWidget {
@@ -263,39 +264,44 @@ class PageOne extends StatelessWidget {
                 ],
               ),
             ),
-            Container(
-              // Get Started
-              margin: EdgeInsets.fromLTRB(27 * fem, 0 * fem, 27 * fem, 0 * fem),
-              width: double.infinity,
-              height: 47 * fem,
-              child: Stack(
-                children: [
-                  Positioned(
-                    // group3zTA (9:26)
-                    left: 49 * fem,
-                    top: 0 * fem,
-                    child: Container(
-                      width: 172 * fem,
-                      height: 47 * fem,
-                      decoration: BoxDecoration(
-                        color: const Color(0xff000000),
-                        borderRadius: BorderRadius.circular(12 * fem),
-                      ),
-                      child: Center(
-                        child: Text(
-                          'GET STARTED ->',
-                          style: SafeGoogleFont(
-                            'Inter',
-                            fontSize: 15 * ffem,
-                            fontWeight: FontWeight.w700,
-                            height: 1.2 * ffem / fem,
-                            color: const Color(0xffffffff),
+            GestureDetector(
+              onTap: ()=> Navigator.push(
+                  context, 
+                  MaterialPageRoute(builder: (context) => const PageTwo())),
+              child: Container(
+                // Get Started
+                margin: EdgeInsets.fromLTRB(27 * fem, 0 * fem, 27 * fem, 0 * fem),
+                width: double.infinity,
+                height: 47 * fem,
+                child: Stack(
+                  children: [
+                    Positioned(
+                      // group3zTA (9:26)
+                      left: 49 * fem,
+                      top: 0 * fem,
+                      child: Container(
+                        width: 172 * fem,
+                        height: 47 * fem,
+                        decoration: BoxDecoration(
+                          color: const Color(0xff000000),
+                          borderRadius: BorderRadius.circular(12 * fem),
+                        ),
+                        child: Center(
+                          child: Text(
+                            'GET STARTED ->',
+                            style: SafeGoogleFont(
+                              'Inter',
+                              fontSize: 15 * ffem,
+                              fontWeight: FontWeight.w700,
+                              height: 1.2 * ffem / fem,
+                              color: const Color(0xffffffff),
+                            ),
                           ),
                         ),
                       ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
           ],

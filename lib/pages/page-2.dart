@@ -12,11 +12,11 @@ class PageTwo extends StatelessWidget {
     double baseWidth = 358;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
-    return SizedBox(
-      width: double.infinity,
+    return Material(
+      // width: double.infinity,
       child: Container(
         // Page 2
-        padding: EdgeInsets.fromLTRB(25 * fem, 51 * fem, 7 * fem, 78 * fem),
+        padding: EdgeInsets.fromLTRB(25 * fem, 51 * fem, 7 * fem, 25 * fem),
         width: double.infinity,
         decoration: BoxDecoration(
           color: const Color(0xffefebe7),
@@ -392,8 +392,7 @@ class PageTwo extends StatelessWidget {
             ),
             Container(
               // Email Open Rate
-              margin:
-                  EdgeInsets.fromLTRB(0 * fem, 0 * fem, 216 * fem, 20 * fem),
+              margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 216 * fem, 20 * fem),
               child: Text(
                 'EMAIL OPEN RATE ',
                 style: SafeGoogleFont(
@@ -407,7 +406,7 @@ class PageTwo extends StatelessWidget {
             ),
             Container(
               // Robert Fox
-              margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 35 * fem, 37 * fem),
+              margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 35 * fem, 17 * fem),
               width: 291 * fem,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -586,12 +585,12 @@ class PageTwo extends StatelessWidget {
             ),
             Container(
               // Bottom Navbar
-              margin: EdgeInsets.fromLTRB(44 * fem, 0 * fem, 62 * fem, 0 * fem),
-              width: double.infinity,
+              margin: EdgeInsets.fromLTRB(44 * fem, 30 * fem, 62 * fem, 0 * fem),
+              // width: double.infinity,
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Container(
+                  SizedBox(
                     // Home Icon
                     width: 20 * fem,
                     height: 20 * fem,
