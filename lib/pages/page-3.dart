@@ -14,7 +14,7 @@ class PageThree extends StatelessWidget {
     return SizedBox(
       width: double.infinity,
       child: Container(
-        // page3u44 (9:77)
+        // Page 3
         padding: EdgeInsets.fromLTRB(23 * fem, 51 * fem, 24 * fem, 78 * fem),
         width: double.infinity,
         decoration: BoxDecoration(
@@ -80,8 +80,7 @@ class PageThree extends StatelessWidget {
                 children: [
                   Container(
                     // statistics text
-                    margin: EdgeInsets.fromLTRB(
-                        0 * fem, 0 * fem, 168 * fem, 0 * fem),
+                    margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 168 * fem, 0 * fem),
                     child: Text(
                       'STATISTICS',
                       style: SafeGoogleFont(

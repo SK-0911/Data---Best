@@ -12,7 +12,7 @@ class PageTwo extends StatelessWidget {
     double baseWidth = 358;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
-    return Container(
+    return SizedBox(
       width: double.infinity,
       child: Container(
         // Page 2
@@ -27,14 +27,13 @@ class PageTwo extends StatelessWidget {
           children: [
             Container(
               // Header
-              margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 14 * fem, 31 * fem),
+              margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 14 * fem, 51 * fem),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Container(
                     // Logo
-                    margin: EdgeInsets.fromLTRB(
-                        0 * fem, 0 * fem, 10 * fem, 0 * fem),
+                    margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 10 * fem, 0 * fem),
                     width: 35 * fem,
                     height: 35 * fem,
                     decoration: BoxDecoration(
@@ -53,14 +52,13 @@ class PageTwo extends StatelessWidget {
                         fontSize: 16 * ffem,
                         fontWeight: FontWeight.w600,
                         height: 1.2125 * ffem / fem,
-                        color: Color(0xff000000),
+                        color: const Color(0xff000000),
                       ),
                     ),
                   ),
                   Container(
                     // Navbar
-                    margin:
-                        EdgeInsets.fromLTRB(0 * fem, 2 * fem, 0 * fem, 0 * fem),
+                    margin: EdgeInsets.fromLTRB(0 * fem, 2 * fem, 0 * fem, 0 * fem),
                     width: 33 * fem,
                     height: 9 * fem,
                     child: Image.asset(
@@ -98,7 +96,7 @@ class PageTwo extends StatelessWidget {
                   Positioned(
                     left: 16 * fem,
                     top: 11 * fem,
-                    child: Container(
+                    child: SizedBox(
                       width: 310 * fem,
                       height: 167 * fem,
                       child: Stack(
@@ -117,8 +115,8 @@ class PageTwo extends StatelessWidget {
                                     'Inter',
                                     fontSize: 14 * ffem,
                                     fontWeight: FontWeight.w300,
-                                    height: 1.2125 * ffem / fem,
-                                    color: Color(0xff000000),
+                                    height: 1.2 * ffem / fem,
+                                    color: const Color(0xff000000),
                                   ),
                                 ),
                               ),
@@ -157,7 +155,7 @@ class PageTwo extends StatelessWidget {
                                     fontSize: 13 * ffem,
                                     fontWeight: FontWeight.w400,
                                     height: 1.2125 * ffem / fem,
-                                    color: Color(0xffffffff),
+                                    color: const Color(0xffffffff),
                                   ),
                                 ),
                               ),
@@ -177,8 +175,8 @@ class PageTwo extends StatelessWidget {
                                     'Inter',
                                     fontSize: 24 * ffem,
                                     fontWeight: FontWeight.w700,
-                                    height: 1.2125 * ffem / fem,
-                                    color: Color(0xff000000),
+                                    height: 1.2 * ffem / fem,
+                                    color: const Color(0xff000000),
                                   ),
                                 ),
                               ),
@@ -209,7 +207,7 @@ class PageTwo extends StatelessWidget {
             Container(
               // Data Actions Group
               margin:
-                  EdgeInsets.fromLTRB(0 * fem, 0 * fem, 18 * fem, 40.82 * fem),
+                  EdgeInsets.fromLTRB(0 * fem, 0 * fem, 18 * fem, 41 * fem),
               width: 308 * fem,
               height: 119.18 * fem,
               child: Stack(
@@ -236,8 +234,8 @@ class PageTwo extends StatelessWidget {
                                     'Inter',
                                     fontSize: 16 * ffem,
                                     fontWeight: FontWeight.w700,
-                                    height: 1.2125 * ffem / fem,
-                                    color: Color(0xff000000),
+                                    height: 1.2 * ffem / fem,
+                                    color: const Color(0xff000000),
                                   ),
                                 ),
                               ),
@@ -261,9 +259,8 @@ class PageTwo extends StatelessWidget {
                                     width: 47 * fem,
                                     height: 49 * fem,
                                     decoration: BoxDecoration(
-                                      borderRadius:
-                                          BorderRadius.circular(5 * fem),
-                                      color: Color(0xffffffff),
+                                      borderRadius: BorderRadius.circular(5 * fem),
+                                      color: const Color(0xffffffff),
                                     ),
                                   ),
                                   SizedBox(
@@ -274,9 +271,8 @@ class PageTwo extends StatelessWidget {
                                     width: 47 * fem,
                                     height: 49 * fem,
                                     decoration: BoxDecoration(
-                                      borderRadius:
-                                          BorderRadius.circular(5 * fem),
-                                      color: Color(0xffffffff),
+                                      borderRadius: BorderRadius.circular(5 * fem),
+                                      color: const Color(0xffffffff),
                                     ),
                                   ),
                                   SizedBox(
@@ -287,9 +283,8 @@ class PageTwo extends StatelessWidget {
                                     width: 47 * fem,
                                     height: 49 * fem,
                                     decoration: BoxDecoration(
-                                      borderRadius:
-                                          BorderRadius.circular(5 * fem),
-                                      color: Color(0xffffffff),
+                                      borderRadius: BorderRadius.circular(5 * fem),
+                                      color: const Color(0xffffffff),
                                     ),
                                   ),
                                   SizedBox(
@@ -302,7 +297,7 @@ class PageTwo extends StatelessWidget {
                                     decoration: BoxDecoration(
                                       borderRadius:
                                           BorderRadius.circular(5 * fem),
-                                      color: Color(0xffffffff),
+                                      color: const Color(0xffffffff),
                                     ),
                                   ),
                                 ],
@@ -344,7 +339,7 @@ class PageTwo extends StatelessWidget {
                             ),
                           ),
                           Positioned(
-                            // image3Gzt (9:56)
+                            // List img
                             left: 216 * fem,
                             top: 73 * fem,
                             child: Align(
@@ -359,7 +354,7 @@ class PageTwo extends StatelessWidget {
                             ),
                           ),
                           Positioned(
-                            // image4bGU (9:57)
+                            // Trio Group
                             left: 103 * fem,
                             top: 79 * fem,
                             child: Align(
@@ -378,13 +373,13 @@ class PageTwo extends StatelessWidget {
                     ),
                   ),
                   Positioned(
-                    // image2u2G (9:58)
+                    // Turn Arrow icon
                     left: 162 * fem,
-                    top: 65.0000076294 * fem,
+                    top: 65 * fem,
                     child: Align(
                       child: SizedBox(
-                        width: 54.18 * fem,
-                        height: 54.18 * fem,
+                        width: 54 * fem,
+                        height: 54 * fem,
                         child: Image.asset(
                           'assets/page-1/images/image-2.png',
                           fit: BoxFit.cover,
@@ -405,8 +400,8 @@ class PageTwo extends StatelessWidget {
                   'Inter',
                   fontSize: 12 * ffem,
                   fontWeight: FontWeight.w600,
-                  height: 1.2125 * ffem / fem,
-                  color: Color(0xff191919),
+                  height: 1.2 * ffem / fem,
+                  color: const Color(0xff191919),
                 ),
               ),
             ),
@@ -419,8 +414,7 @@ class PageTwo extends StatelessWidget {
                 children: [
                   Container(
                     // Robert Fox section
-                    margin: EdgeInsets.fromLTRB(
-                        0 * fem, 0 * fem, 1 * fem, 19 * fem),
+                    margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 1 * fem, 19 * fem),
                     width: double.infinity,
                     height: 51 * fem,
                     child: Row(
@@ -528,8 +522,7 @@ class PageTwo extends StatelessWidget {
                         ),
                         Container(
                           // Name, Designation and stat Group
-                          padding: EdgeInsets.fromLTRB(
-                              19 * fem, 4 * fem, 0 * fem, 6 * fem),
+                          padding: EdgeInsets.fromLTRB(19 * fem, 4 * fem, 0 * fem, 6 * fem),
                           height: double.infinity,
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.center,
@@ -552,8 +545,8 @@ class PageTwo extends StatelessWidget {
                                           'Inter',
                                           fontSize: 14 * ffem,
                                           fontWeight: FontWeight.w700,
-                                          height: 1.2125 * ffem / fem,
-                                          color: Color(0xff191919),
+                                          height: 1.2 * ffem / fem,
+                                          color: const Color(0xff191919),
                                         ),
                                       ),
                                     ),
@@ -564,8 +557,8 @@ class PageTwo extends StatelessWidget {
                                         'Inter',
                                         fontSize: 12 * ffem,
                                         fontWeight: FontWeight.w300,
-                                        height: 1.2125 * ffem / fem,
-                                        color: Color(0xff5f5a5a),
+                                        height: 1.2 * ffem / fem,
+                                        color: const Color(0xff5f5a5a),
                                       ),
                                     ),
                                   ],
@@ -581,8 +574,8 @@ class PageTwo extends StatelessWidget {
                                     'Inter',
                                     fontSize: 14 * ffem,
                                     fontWeight: FontWeight.w700,
-                                    height: 1.2125 * ffem / fem,
-                                    color: Color(0xff000000),
+                                    height: 1.2 * ffem / fem,
+                                    color: const Color(0xff000000),
                                   ),
                                 ),
                               ),
@@ -616,8 +609,7 @@ class PageTwo extends StatelessWidget {
                   ),
                   Container(
                     // Stats Icon
-                    margin:
-                        EdgeInsets.fromLTRB(0 * fem, 1 * fem, 0 * fem, 0 * fem),
+                    margin: EdgeInsets.fromLTRB(0 * fem, 1 * fem, 0 * fem, 0 * fem),
                     width: 12 * fem,
                     height: 15 * fem,
                     child: Image.asset(

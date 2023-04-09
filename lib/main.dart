@@ -7,9 +7,10 @@ import 'package:myapp/pages/page-1.dart';
 import 'package:myapp/pages/page-2.dart';
 import 'package:myapp/pages/page-3.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 	@override
 	Widget build(BuildContext context) {
 	return MaterialApp(
@@ -19,9 +20,9 @@ class MyApp extends StatelessWidget {
 		theme: ThemeData(
 		primarySwatch: Colors.blue,
 		),
-		home: Scaffold(
+		home: const Scaffold(
 		body: SingleChildScrollView(
-			child: PageThree(),
+			child: PageOne(),
 		),
 		),
 	);

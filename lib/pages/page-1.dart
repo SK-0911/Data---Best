@@ -15,7 +15,7 @@ class PageOne extends StatelessWidget {
     return Container(
       width: double.infinity,
       child: Container(
-        // page1t48 (9:2)
+        // Page 1
         padding: EdgeInsets.fromLTRB(17 * fem, 41 * fem, 17 * fem, 167 * fem),
         width: double.infinity,
         decoration: BoxDecoration(
